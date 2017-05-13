@@ -22,6 +22,10 @@ $ docker build -t miy4/plantuml .
 
 ### Usage
 
+Run `docker` commands directly if you really like typing, otherwise use the `run-plantuml` helper scripts.
+
+#### *nix
+
 ```sh
 $ docker run -v ${PWD}:/work -w /work --rm [PLANTUML OPTIONS and ARGUMENTS]
 ```
@@ -30,6 +34,18 @@ or
 
 ```sh
 $ run-plantuml [PLANTUML OPTIONS and ARGUMENTS]
+```
+
+#### Windows
+
+```bat
+docker run -v "%cd%:/work" -w /work --rm [PLANTUML OPTIONS and ARGUMENTS]
+```
+
+or
+
+```bat
+run-plantuml.bat [PLANTUML OPTIONS and ARGUMENTS]
 ```
 
 ### Example
